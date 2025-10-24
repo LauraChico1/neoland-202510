@@ -120,6 +120,30 @@ To https://github.com/manuelbarzi/neoland-202510
 c0018b0..b123f3d  main -> main
    ```
 
+## git log
+
+Show commits history ordered descending by time.
+
+```sh
+$ git log
+commit c0d044040c37445af4f71cf0eaf4bcc8d3727325 (HEAD -> main, origin/main, origin/HEAD)
+Author: LauraChico1 <laurachicogarcia@gmail.com>
+Date:   Fri Oct 24 19:33:39 2025 +0200
+
+    add new commands to git doc
+
+commit 658c27c74dbcbbd529f3b8957b42409815e97f20
+Author: LauraChico1 <laurachicogarcia@gmail.com>
+Date:   Thu Oct 23 21:52:40 2025 +0200
+
+    add bash and git docs
+
+commit c0018b0a7fcd2974422226e792bbc4c080df6e91
+Author: manuelbarzi <manuelbarzi@gmail.com>
+Date:   Thu Oct 23 20:10:57 2025 +0200
+
+    Initial commit
+```
 
 
 
