@@ -115,9 +115,9 @@
             top: 250px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-        }
+        
 
-        .windows {
+        & .windows {
             width: 100px;
             height: 20px;
             background-color: aqua;
@@ -128,17 +128,21 @@
             top: -20px;
         }
 
-        .front-wheel {
+        & .wheel{
             width: 40px;
             height: 40px;
             background-color: gray;
             border-radius: 20px;
             position: absolute;
-            left: 20px;
             top: 20px;
         }
-
-        .front-rim {
+        & .front-wheel{
+            left: 20px;   
+        }
+        & .back-wheel{
+            right: 20px;
+        }
+        & .rim{
             width: 30px;
             height: 30px;
             background-color: darkgray;
@@ -148,26 +152,8 @@
             top: 5px;
         }
 
-        .back-wheel {
-            width: 40px;
-            height: 40px;
-            background-color: gray;
-            border-radius: 20px;
-            position: absolute;
-            left: 20px;
-            top: 20px;
-        }
+    } 
 
-
-        .back-rim {
-            width: 30px;
-            height: 30px;
-            background-color: darkgray;
-            border-radius: 15px;
-            position: absolute;
-            left: 5px;
-            top: 5px;
-        }
 
 
         /* spaceship */
@@ -327,11 +313,12 @@
 
     <div class="car">
         <div class="windows"></div>
-        <div class="front-wheel">
-            <div class="front-rim"></div>
+        <div class="wheel front-wheel">
+            <div class="rim"></div>
+            <div class="door"></div>
         </div>
-        <div class="back-wheel">
-            <div class="back-rim"></div>
+        <div class="wheel back-wheel">
+            <div class="rim"></div>
         </div>
     </div>
 
