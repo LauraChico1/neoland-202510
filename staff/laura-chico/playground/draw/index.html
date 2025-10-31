@@ -11,6 +11,149 @@
             background-color: black;
         }
 
+        /* utility clases */
+
+        .w-10 {
+            width: 10px;
+        }
+
+        .w-20 {
+            width: 20px;
+        }
+
+        .w-40 {
+            width: 40px;
+        }
+
+        .w-50 {
+            width: 50px;
+        }
+
+        .w-100 {
+            width: 100px;
+        }
+
+        .h-10 {
+            height: 10px;
+        }
+
+        .h-20 {
+            height: 20px;
+        }
+
+        .h-30 {
+            height: 30px;
+        }
+
+        .h-40 {
+            height: 40px;
+        }
+
+        .h-100 {
+            height: 100px;
+        }
+
+        .bg-palevioletred {
+            background-color: palevioletred;
+        }
+
+        .bg-pink {
+            background-color: pink;
+        }
+
+        .bg-white {
+            background-color: white;
+        }
+
+        .bg-black {
+            background-color: black;
+        }
+
+        .absolute {
+            position: absolute;
+        }
+
+        .rigth-5 {
+            right: 5px;
+        }
+
+        .left-5 {
+            left: 5px;
+        }
+
+        .left-10 {
+            left: 10px;
+        }
+
+        .left-25 {
+            left: 25px;
+        }
+
+        .left-100 {
+            left: 100px;
+        }
+
+        .top-5 {
+            top: 5px;
+        }
+
+        .top-10 {
+            top: 10px;
+        }
+
+        .top-50 {
+            top: 50px;
+        }
+
+        .top-100 {
+            top: 100px;
+        }
+
+
+        & .hole {
+
+
+            background-color: black;
+            position: absolute;
+            top: 10px;
+        }
+
+
+        & .left-hole {
+            left: 10px;
+        }
+
+        & .right-hole {
+            right: 10px;
+        }
+
+        & .mouth {
+            width: 30px;
+            height: 10px;
+            background-color: black;
+            position: absolute;
+            left: 35px;
+            bottom: 5px;
+        }
+
+        & .ear {
+            width: 10px;
+            height: 40px;
+            background-color: pink;
+            position: absolute;
+        }
+
+        & .left-ear {
+            left: -10px;
+        }
+
+        & .right-ear {
+            right: -10px;
+        }
+
+
+
+
         /* pig */
 
         .pig {
@@ -115,44 +258,47 @@
             top: 250px;
             border-top-left-radius: 20px;
             border-top-right-radius: 20px;
-        
 
-        & .windows {
-            width: 100px;
-            height: 20px;
-            background-color: aqua;
-            border-top-left-radius: 20px;
-            border-top-right-radius: 20px;
-            position: absolute;
-            left: 50px;
-            top: -20px;
-        }
 
-        & .wheel{
-            width: 40px;
-            height: 40px;
-            background-color: gray;
-            border-radius: 20px;
-            position: absolute;
-            top: 20px;
-        }
-        & .front-wheel{
-            left: 20px;   
-        }
-        & .back-wheel{
-            right: 20px;
-        }
-        & .rim{
-            width: 30px;
-            height: 30px;
-            background-color: darkgray;
-            border-radius: 15px;
-            position: absolute;
-            left: 5px;
-            top: 5px;
-        }
+            & .windows {
+                width: 100px;
+                height: 20px;
+                background-color: aqua;
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+                position: absolute;
+                left: 50px;
+                top: -20px;
+            }
 
-    } 
+            & .wheel {
+                width: 40px;
+                height: 40px;
+                background-color: gray;
+                border-radius: 20px;
+                position: absolute;
+                top: 20px;
+            }
+
+            & .front-wheel {
+                left: 20px;
+            }
+
+            & .back-wheel {
+                right: 20px;
+            }
+
+            & .rim {
+                width: 30px;
+                height: 30px;
+                background-color: darkgray;
+                border-radius: 15px;
+                position: absolute;
+                left: 5px;
+                top: 5px;
+            }
+
+        }
 
 
 
@@ -165,70 +311,73 @@
             position: absolute;
             left: 100px;
             top: 300px;
-        }
 
-        .head {
-            width: 50px;
-            height: 100px;
-            background-color: lightgray;
-            position: absolute;
-            left: 0px;
-            top: -50px;
-            border-radius: 50%;
-        }
 
-        .window {
-            width: 30px;
-            height: 15px;
-            background-color: aqua;
-            position: absolute;
-            left: 10px;
-            top: -20px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-        }
+            & .head {
+                width: 50px;
+                height: 100px;
+                background-color: lightgray;
+                position: absolute;
+                left: 0px;
+                top: -50px;
+                border-radius: 50%;
+            }
 
-        .wings {
-            width: 50px;
-            height: 0px;
-            background-color: transparent;
-            position: absolute;
-            left: -50px;
-            bottom: 0px;
-            border-bottom: 50px solid lightgray;
-            border-left: 50px solid transparent;
-            border-right: 50px solid transparent;
-        }
+            & .window {
+                width: 30px;
+                height: 15px;
+                background-color: aqua;
+                position: absolute;
+                left: 10px;
+                top: -20px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
 
-        .tail {
-            width: 10px;
-            height: 40px;
-            background-color: gray;
-            position: absolute;
-            top: 10px;
-            left: 20px;
-        }
+            & .wings {
+                width: 50px;
+                height: 0px;
+                background-color: transparent;
+                position: absolute;
+                left: -50px;
+                bottom: 0px;
+                border-bottom: 50px solid lightgray;
+                border-left: 50px solid transparent;
+                border-right: 50px solid transparent;
+            }
 
-        .fire {
-            width: 70px;
-            height: 100px;
-            background-color: gold;
-            position: absolute;
-            left: -10px;
-            bottom: -50px;
-            border-radius: 50%;
-            z-index: -10;
-        }
+            & .tail {
+                width: 10px;
+                height: 40px;
+                background-color: gray;
+                position: absolute;
+                top: 10px;
+                left: 20px;
+            }
 
-        .inner-fire {
-            width: 40px;
-            height: 60px;
-            background-color: tomato;
-            position: absolute;
-            left: 15px;
-            bottom: 20px;
-            border-radius: 50%;
-            z-index: -10;
+            & .fire {
+                width: 70px;
+                height: 100px;
+                background-color: gold;
+                position: absolute;
+                left: -10px;
+                bottom: -50px;
+                border-radius: 50%;
+                z-index: -10;
+            }
+
+            & .inner-fire {
+                width: 40px;
+                height: 60px;
+                background-color: tomato;
+                position: absolute;
+                left: 15px;
+                bottom: 20px;
+                border-radius: 50%;
+                z-index: -10;
+            }
+
+
         }
 
         /* house*/
@@ -240,36 +389,34 @@
             position: absolute;
             right: 300px;
             top: 500px;
-        }
 
-        .glass-1 {
-            width: 25px;
-            height: 25px;
-            px;
-            background-color: aqua;
-            position: absolute;
-            left: 15px;
-            top: 15px;
-        }
 
-        .glass-2 {
-            width: 25px;
-            height: 25px;
-            background-color: aqua;
-            position: absolute;
-            right: 15px;
-            top: 15px;
-        }
+            & .glass {
+                width: 25px;
+                height: 25px;
+                background-color: aqua;
+                position: absolute;
+                top: 15px;
+            }
 
-        .door {
-            width: 30px;
-            height: 50px;
-            background-color: blanchedalmond;
-            position: absolute;
-            left: 35px;
-            bottom: 0px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
+            & .glass-1 {
+                left: 15px;
+            }
+
+            & .glass-2 {
+                right: 15px;
+            }
+
+            .door {
+                width: 30px;
+                height: 50px;
+                background-color: blanchedalmond;
+                position: absolute;
+                left: 35px;
+                bottom: 0px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+            }
         }
 
         .roof {
@@ -315,7 +462,6 @@
         <div class="windows"></div>
         <div class="wheel front-wheel">
             <div class="rim"></div>
-            <div class="door"></div>
         </div>
         <div class="wheel back-wheel">
             <div class="rim"></div>
@@ -334,8 +480,11 @@
     </div>
 
     <div class="house">
-        <div class="glass-1"></div>
-        <div class="glass-2"></div>
+        <div class="glass">
+            <div class="glass-1"></div>
+            <div class="glass-2"></div>
+        </div>
+
         <div class="door"></div>
         <div class="fireplace"></div>
         <div class="roof"></div>
