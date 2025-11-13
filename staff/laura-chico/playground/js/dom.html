@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+  
+  
+  <!---
+  <style>
+        .mi-clase{
+            border-style: solid;
+            background-color: pink;
+
+                }
+    </style>
+-->
+
+
+
+</head>
+<body>
+    <h1>Hello, DOM!</h1>
+
+    <div> 
+        <p>A ver que ponemos!</p>
+    
+    </div>
+    <script>
+        document.childNodes[1].childNodes[2].childNodes[1].style.backgroundColor = 'dodgerblue';
+        document.childNodes[1].childNodes[2].childNodes[1].style.color = 'gold';
+        document.childNodes[1].childNodes[2].childNodes[1].style.paddingLeft = '.5rem';
+        document.childNodes[1].childNodes[2].childNodes[3].childNodes[1].style.color = 'red';
+
+        const div = document.createElement('div')
+        div.textContent = 'Descubriendo DOM'
+        //div.className - 'mi-clase'
+        div.style.borderStyle = 'solid'
+        div.style.backgroundColor = 'rgb(126, 126, 126)'
+        document.body.appendChild(div)
+        
+
+        const box = document.createElement('div')
+        box.style.width = '100px'
+        box.style.height = '100px'
+        box.style.backgroundColor = 'green'
+        box.style.position = 'absolute'
+        box.style.top = '400px'
+        box.style.left = '150px'
+        document.body.appendChild(box)
+
+    </script>
+</body>
+</html>
