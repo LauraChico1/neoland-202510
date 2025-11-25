@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biscuit</title>
+</head>
+
+<body>
+    <h1>Hello, Biscuit!</h1>
+    <script>
+
+        const step = 10
+
+        let monsterX = 300, monsterY = 300, monsterWidth = 170
+
+            , monsterHeight = 190
+
+        const monster = document.createElement('div')
+        monster.style.width = monsterWidth + 'px'
+        monster.style.height = monsterHeight + 'px'
+        monster.style.backgroundColor = 'blue'
+        monster.style.backgroundImage = 'url("https://imgs.search.brave.com/5AYwAInbvYG7qI25kMursG0iWAb3-f7mBGX-OLQYCxA/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9mbHlj/bGlwYXJ0LmNvbS90/aHVtYjIvY29va2ll/LW1vbnN0ZXItY2xp/cC1hcnQtNjA0Nzku/cG5n")'
+        monster.style.backgroundPosition = 'center'
+        monster.style.backgroundSize = 'contain'
+        monster.style.backgroundRepeat = 'no-repeat'
+        monster.style.position = 'absolute'
+        monster.style.left = monsterX + 'px'
+        monster.style.top = monsterY + 'px'
+        document.body.appendChild(monster)
+
+        let biscuitX = 200, biscuitY = 200, biscuitWidth = 100, biscuitHeight = 100
+        const biscuit = document.createElement('div')
+        biscuit.style.width = biscuitWidth + 'px'
+        biscuit.style.height = biscuitHeight + 'px'
+        biscuit.style.backgroundColor = 'pink'
+        biscuit.style.backgroundImage = 'url("https://imgs.search.brave.com/0EQQ7WJhe5cXBHObofq4g-SAPazjwVg2EIsgIucN17I/rs:fit:500:0:1:0/g:ce/aHR0cHM6Ly9wbmcu/cG5ndHJlZS5jb20v/ZWxlbWVudF9vdXIv/MjAxOTA1Mjkvb3Vy/bWlkL3BuZ3RyZWUt/Z291cm1ldC1jb29r/aWUtaWxsdXN0cmF0/aW9uLWltYWdlXzEy/MTM0OTAuanBn")'
+        biscuit.style.backgroundPosition = 'center'
+        biscuit.style.backgroundSize = 'contain'
+        biscuit.style.backgroundRepeat = 'no-repeat'
+        biscuit.style.position = 'absolute'
+        biscuit.style.left = biscuitX + 'px'
+        biscuit.style.top = biscuitY + 'px'
+        document.body.appendChild(biscuit)
+
+        document.addEventListener('keydown', function(event) {
+
+            if (event.key === 'ArrowUp')
+                monsterY -= step
+            else if (event.key === 'ArrowDown')
+                monsterY += step
+            else if (event.key === 'ArrowLeft')
+                monsterX -= step
+            else if (event.key === 'ArrowRight')
+                monsterX += step
+
+            monster.style.left = monsterX + 'px'
+            monster.style.top = monsterY + 'px'
+
+            console.log('monster', monsterX, monsterY)
+
+            if (event.key === 'w')
+                biscuitY -= step
+            else if (event.key === 's')
+                biscuitY += step
+            else if (event.key === 'a')
+                biscuitX -= step
+            else if (event.key === 'd')
+                biscuitX += step
+
+
+            biscuit.style.left = biscuitX + 'px'
+            biscuit.style.top = biscuitY + 'px'
+
+            console.log('biscuit', biscuitX, biscuitY)
+        })
+
+
+
+
+
+    </script>
+</body>
+
+</html>

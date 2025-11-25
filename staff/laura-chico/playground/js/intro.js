@@ -19,4 +19,4 @@ function newFunction() {
 
     console.log('Suma total:', suma)
 }
-
+                                            
